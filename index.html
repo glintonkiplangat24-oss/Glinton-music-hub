@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Glinton Music Hub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#101010;
+color:white;
+font-family:Arial,sans-serif;
+}
+
+header{
+background:#181818;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#1ed760;
+font-size:23px;
+font-weight:bold;
+}
+
+nav{
+padding:15px;
+display:flex;
+gap:10px;
+overflow-x:auto;
+}
+
+nav button{
+white-space:nowrap;
+}
+
+button{
+border:none;
+background:#1ed760;
+color:#000;
+padding:12px 18px;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:active{
+transform:scale(.97);
+}
+
+.hero{
+text-align:center;
+padding:35px 15px;
+}
+
+.hero h1{
+font-size:32px;
+margin-bottom:12px;
+}
+
+.hero p{
+color:#aaa;
+}
+
+.search{
+max-width:650px;
+margin:25px auto;
+display:flex;
+gap:8px;
+}
+
+.search input{
+flex:1;
+min-width:0;
+padding:16px;
+border-radius:30px;
+border:none;
+outline:none;
+font-size:16px;
+}
+
+.container{
+padding:20px;
+}
+
+.section-title{
+margin:15px 0;
+}
+
+#results{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(155px,1fr));
+gap:17px;
+}
+
+.song{
+background:#202020;
+padding:12px;
+border-radius:13px;
+overflow:hidden;
+}
+
+.song img{
+width:100%;
+aspect-ratio:1;
+object-fit:cover;
+border-radius:9px;
+}
+
+.song h3{
+font-size:15px;
+margin-top:10px;
+}
+
+.song p{
+font-size:13px;
+color:#aaa;
+margin:7px 0;
+}
+
+.song audio{
+width:100%;
+margin:10px 0;
+}
+
+.song a{
+display:block;
+text-align:center;
+padding:11px;
+margin-top:8px;
+background:#1ed760;
+color:black;
+text-decoration:none;
+border-radius:25px;
+font-size:12px;
+font-weight:bold;
+}
+
+.song .secondary{
+background:#333;
+color:white;
+}
+
+.favorite{
+background:#333;
+color:white;
+width:100%;
+margin-top:8px;
+}
+
+.message{
+text-align:center;
+padding:35px;
+color:#aaa;
+grid-column:1/-1;
+}
+
+footer{
+background:#181818;
+padding:30px;
+text-align:center;
+color:#aaa;
+margin-top:40px;
+}
+
+footer a{
+color:#1ed760;
+}
+
+@media(max-width:500px){
+
+.hero h1{
+font-size:26px;
+}
+
+.container{
+padding:13px;
+}
+
+#results{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🎵
